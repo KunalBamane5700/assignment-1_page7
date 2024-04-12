@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            background: #FCFCFC;
+        }
+
+        .btn {
+            background: linear-gradient(270deg, rgba(123, 145, 255, 1), rgba(149, 190, 255, 1));
+        }
+
+        .burn {
+            background: linear-gradient(90deg, rgba(129, 157, 255, 0.28), rgba(16, 16, 16, 0.05), rgba(255, 255, 255, 0.6));
+        }
+
+        .search {
+            background: linear-gradient(90deg, rgba(222, 229, 255, 1), rgba(128, 154, 255, 1));
+        }
+
+        .dates {
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .mon {
+            background: linear-gradient(270deg, rgba(141, 164, 255, 1), rgba(209, 219, 255, 1));
+        }
+
+        .span-1 {
+            background: linear-gradient(270deg, rgba(211, 164, 244, 1), rgba(233, 177, 224, 1));
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="relative w-[375px] h-[800px] rounded-lg">
+    <section>
+        <div class="navbar flex justify-between p-4">
+            <div class="element-1 ml-4">
+                9:41
+            </div>
+            <div class="element-2 items-center">
+                <box-icon name='signal-4' class="h-5"></box-icon>
+                <i class="fa-sharp fa-solid fa-wifi"></i>&#160;
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="tracker flex items-center px-4">
+            <i class="fa-solid fa-angle-left mr-10 bg-gray-200 p-1"></i>
+            <h1 class="text-xl font-bold p-2 w-[80%]">Workout Schedule</h1>
+        </div>
+        <div class="cal flex justify-center text-sm font-semibold">
+            <p> <i class="fa-solid fa-angle-left"></i> <span class="px-2"> Feb 2024 </span> <i
+                    class="fa-solid fa-angle-right"></i> </p>
+        </div>
+        <div class="dates flex justify-center mt-3 gap-2">
+            <div class="days p-4"><span>Sun</span><br><span class="text-4xl font-medium">5</span></div>
+            <div class="days mon p-4 rounded-xl h-20 flex flex-col justify-center items-center mt-2 text-white">
+                <span>Mon</span><span class="text-4xl font-medium">6</span>
+            </div>
+            <div class="days p-4"><span>Tue</span><br><span class="text-4xl font-medium">7</span></div>
+            <div class="days p-4"><span>Wed</span><br><span class="text-4xl font-medium">8</span></div>
+            <div class="days p-4"><span>Thu</span><br><span class="text-4xl font-medium">9</span></div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto relative mt-5">
+            <div class="flex flex-col h-[575px] gap-3 relative">
+                <div class="time border-b border-gray-400 px-4 py-1 font-semibold">06:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 py-1 flex justify-between relative font-semibold">
+                    07:00 AM
+                    <span
+                        class="span-1 px-3 text-sm text-white p-2 rounded-full bg-blue-500 absolute -bottom-4 right-0">Ab
+                        Workout, 7:30am</span>
+                </div>
+                <div class="time border-b border-gray-400 px-4 py-1 font-semibold">08:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 relative flex font-semibold">
+                    09:00 AM
+                    <div class="relative overflow-hidden mt-1">
+                        <span
+                            class="span-1 px-3 text-sm text-white p-2 rounded-full bg-blue-500 relative ml-4 right-0 bottom-[-3px]">
+                            Upperbody Workout, 9am
+                        </span>
+                    </div>
+                </div>
+
+                <div class="time border-b border-gray-400 px-4 py-1 font-semibold">10:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 py-1 font-semibold">11:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 py-1 font-semibold">12:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 py-1 font-semibold">01:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 flex font-semibold">
+                    02:00 AM
+                    <span
+                        class="span-2 px-3 text-sm bg-gray-300 py-2 rounded-full relative transform -translate-y-2 ml-4">
+                        Lowerbody Workout, 3pm
+                    </span>
+                </div>
+                <div class="time border-b border-gray-400 px-4 py-1 flex justify-between relative font-semibold">
+                    03:00 AM
+                    <span
+                        class="span-1 px-3 h-[63px] w-[63px] flex items-center justify-center text-4xl font-normal text-white p-2 rounded-full bg-blue-500 absolute -bottom-8 right-0">+</span>
+                </div>
+                <div class="time border-b border-gray-400 px-4 pb-1 font-semibold">04:00 AM</div>
+                <div class="time border-b border-gray-400 px-4 pb-1 font-semibold">05:00 AM</div>
+            </div>
+            <div class="absolute bottom-0 w-full bg-slate-50 flex justify-between items-center p-4 pr-14 z-10">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-house text-2xl text-gray-500"></i>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-message text-2xl text-gray-500"></i>
+                </div>
+                <div
+                    class="search flex justify-center items-center h-[63px] w-[63px] rounded-full -mt-10 z-10 shadow shadow-lg">
+                    <i class="fa-solid fa-magnifying-glass text-2xl text-white"></i>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-camera text-2xl text-gray-500"></i>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-user text-2xl text-gray-500"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/c8415fd934.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
